@@ -1,0 +1,112 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "myseventhapp",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "myseventhapp",
+		"description": "myseventhappDescription",
+		"dataSources": {
+			"jsonFile": {
+				"uri": "model/Objects.json",
+				"type": "JSON"
+			},
+			"serviceConfig": {
+				"uri": "service/data.json",
+				"type": "JSON"
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://Fiori2/F0012"
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+	    "rootView": {
+		    "viewName": "myseventhapp.view.App",
+	        "type": "XML",
+			"async": false
+		
+	    },	
+		"config": {
+			"serviceUrl": "service/data.json"
+		},	
+		"dependencies": {
+			"minUI5Version": "1.98.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+                "sap.ui.layout": {}
+			}
+		},
+		
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "myseventhapp.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"transition": "slide"
+			},
+			"routes": [ {
+				"pattern": "",
+				"name": "masterPage",
+				"target": "masterPage"
+			   
+			}, {
+				"pattern": "detailPage/{ID}",
+				"name": "detailPage",
+				"target": "detailPage"
+			}, {
+				"pattern": "edit/:ID:",
+				"name": "editPage",
+				"target": "editPage"
+			} ],
+			"targets": {
+				"masterPage": {
+					"viewName": "XMLMasterPage",
+					"viewLevel": 1
+				},
+				"detailPage": {
+					"viewName": "XMLDetailPage",
+					"viewLevel": 2
+				},
+				"editPage": {
+					"viewName": "XMLEditPage",
+					"viewId": "edit",
+					"viewLevel": 3
+				}
+			}
+		},
+		"models": {
+
+	    	"" : {
+		
+				   "type": "sap.ui.model.json.JSONModel",
+				   "dataSource": "serviceConfig"
+				 },
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName" : "i18n/i18n.properties"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/styles.css"
+				}
+			]
+		}
+	}
+}

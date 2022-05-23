@@ -1,0 +1,58 @@
+<mvc:View 
+    controllerName="myseventhapp.controller.XMLEditPage"
+          xmlns:mvc="sap.ui.core.mvc" 
+          xmlns:layout="sap.ui.layout"
+          xmlns:form="sap.ui.layout.form"
+          xmlns="sap.m">
+    
+    <Page id="page"
+          navButtonPress="onNavBack"
+            showNavButton="true"
+            title="Supplier Detail">
+        <content>
+            <form:SimpleForm 
+                id="form"
+                layout="ResponsiveGridLayout"
+                editable="true"
+                class="sap.UiResponsiveMargin"
+                width="auto"
+                labelSpanL="3" labelSpanM="3"
+                emptySpanL="4" emptySpanM="4"
+                columnsL="1" columnsM="1">
+                    <form:content>
+                        <Label id="idLabel"   text="ID"  visible="{viewModel>createModel}" />
+                        <Input id="ID"
+                               value="{SupplierID}"
+                               editable="true"
+                               visible="{viewModel>createModel}"
+                               placeholder="ID" />
+                        <Label id="nameLabel"   text="Company Name" />
+                        <Input id="name"
+                               value="{CompanyName}"
+                               editable="true"
+                               placeholder="Company Name" />
+                        <Label id="contactNameLabel"   text="Contact Name" />
+                        <Input id="contact"
+                               value="{ContactName}"
+                               editable="true"
+                               placeholder="Contact Name" />
+                        <Label id="contactTitleLabel"   text="Contact Title" />
+                        <Input id="contactTtitle"
+                               value="{ContactTitle}"
+                               editable="true"
+                               placeholder="ContactTitle" />
+                        
+                      
+                    </form:content>
+
+            </form:SimpleForm>
+        </content>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button text="Save" press="onSave" />
+                <Button text="Cancel" press="onCancel" />
+            </Toolbar> 
+        </footer>   
+    </Page>
+</mvc:View>

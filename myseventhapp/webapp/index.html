@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title>MVC App</title>
+  <script id="sap-ui-bootstrap"
+            src="http://localhost:3000/resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-libs="sap.ui.core, sap.m,sap.ui.layout,sap.f"
+            data-sap-ui-xx-bindingSyntax="complex"
+            data-sap-ui-preload="async"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-resourceroots='{"myseventhapp":"/"}'>
+    </script/>
+
+    <script>
+        // your coding will go here
+        sap.ui.getCore().attachInit(() => sap.ui.require([
+        // Require modules instead of using global references
+        "sap/ui/model/json/JSONModel",
+        "sap/m/Toolbar",
+
+        // ...
+      ], (JSONModel/*, ...*/) => {
+        const oModel = new JSONModel(sap.ui.require.toUrl("myseventhapp/model/Objects.json"));
+        sap.ui.getCore().setModel(oModel);
+        
+        var oPageMasterView = sap.ui.view(
+           "masterPage",
+              {
+                viewName: "myseventhapp.view.XMLMasterPage",
+                type: sap.ui.core.mvc.ViewType.XML
+              } 
+        );
+    
+
+        var oApp = new sap.m.App({
+            initialPage : "masterPage"
+        }); 
+
+        oApp.addPage(oPageMasterView);
+
+        var oPageDetailView = sap.ui.view(
+           "detailPage",
+              {
+                viewName: "myseventhapp.view.XMLDetailPage",
+                type: sap.ui.core.mvc.ViewType.XML
+              } 
+        );
+
+        oApp.addPage(oPageDetailView);
+
+
+        oApp.placeAt("content");
+      }));
+
+		//var aModel = new sap.ui.model.json.JSONModel(sap.ui.require.toUrl("/mysecondapp/model/Objects.json"));
+		//this.getView().setModel(aModel)
+
+        
+    </script>
+
+
+    </head>
+
+    <body class="sapUiBody" role="application">
+        <div id="content"> </div> 
+    </body>
+
+</html>
