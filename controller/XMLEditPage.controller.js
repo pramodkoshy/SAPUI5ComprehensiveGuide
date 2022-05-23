@@ -1,5 +1,5 @@
 sap.ui.define([
-    "myseventhapp/Controller/BaseController",
+    "./BaseController",
     "sap/m/MessageToast",
     "sap/ui/model/json/JSONModel",
     
