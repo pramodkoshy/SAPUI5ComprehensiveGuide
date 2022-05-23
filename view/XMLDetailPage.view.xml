@@ -1,0 +1,68 @@
+<mvc:View  controllerName="myseventhapp.controller.XMLDetailPage"
+           xmlns:mvc="sap.ui.core.mvc"
+           xmlns="sap.m">
+
+    <Page navButtonPress="onNavBack"
+           showNavButton="true"
+           title="Supplier Detail">
+        <subHeader>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button icon="sap-icon://slim-arrow-up" press="onPageUp" enabled="{viewModel>/buttonPrev}" />
+                <Button icon="sap-icon://slim-arrow-down" press="onPageDown" enabled="{viewModel>/buttonNext}" />
+            </Toolbar>
+        </subHeader>
+        <content>
+            <ObjectHeader
+                title="{ID}" 
+                >
+                <attributes>
+                    <ObjectAttribute 
+                 
+                    text="{ 
+                        
+                        path: 'Address/Country', 
+                        formatter: '.toUpperCase',
+                        type: 'sap.ui.model.type.String'
+                        
+                    }"/>
+                </attributes>     
+            </ObjectHeader>
+            <Table id="table" width="auto" class="sapUiResponsiveMargin" 
+                    noDataText="No data available" growing="true" growingScrollToLoad="true">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title id="tableHeader" text="Supplier Detail" />
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="idColumn">
+                        <header>
+                            <Text text="ID:" id="IDColmnTitle"/> 
+                        </header>
+                    </Column>
+                    <Column id="nameColumn">
+                        <header>
+                            <Text text="Name:" id="NameColmnTitle"/>
+                        </header>
+                    </Column>
+                    <Column id="priceColumn">
+                        <header>
+                            <Text text="Price:" id="PriceColmnTitle"/>
+                        </header>
+                    </Column>
+                </columns>  
+            </Table>
+              
+        </content>
+        
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button text="Edit" press="onEdit" />
+                <Button text="Delete" press="onDelete" />
+            </Toolbar>
+        </footer>
+        
+    </Page>
+</mvc:View>

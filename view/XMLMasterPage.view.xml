@@ -1,0 +1,44 @@
+<mvc:View  controllerName="myseventhapp.controller.XMLMasterPage"
+           xmlns:mvc="sap.ui.core.mvc"
+           xmlns="sap.m">
+
+    <Page title="{{i18n>appTitle}}">
+       <content>
+           <Table 
+               class="sapUiResponsiveMargin"
+               width="auto"
+               items="{/}">
+             <headerToolbar>
+                <Toolbar>
+                  <Title id="title" text="Supplier List"/>  
+                  <ToolbarSpacer />
+                    <Button id="addButton" text="Add" press="onAddSupplier" />
+                </Toolbar>
+             </headerToolbar>
+
+                <columns>
+                    <Column>
+                        <header> <Text text="ID" />  </header> 
+                    </Column>
+                    <Column>
+                        <header> <Text text="CompanyName" />  </header> 
+                    </Column>
+                </columns>
+
+                    <items>
+                        <ColumnListItem type="Navigation" press="onListPress">
+                            <cells>
+                                <ObjectIdentifier id="ID" text="{SupplierID}" />
+                                <ObjectIdentifier id="name" text="{CompanyName}" />
+                            </cells>
+                        </ColumnListItem>
+
+                    </items>
+                  
+                
+             
+           </Table>
+       </content>
+       
+    </Page>
+</mvc:View>
