@@ -1,6 +1,6 @@
 sap.ui.define(
         [   
-            "myseventhapp/Controller/BaseController",
+            "./BaseController",
             "sap/ui/core/routing/History",
             "sap/m/MessageToast"
         ], function (BaseController, History,  MessageToast) {
