@@ -75,6 +75,315 @@
 
                 }
             ]    
+        },
+        {
+            "SupplierID": "ANTON",
+            "CompanyName": "Antonio Moreno Taquería",
+            "ContactName": "Antonio Moreno",
+            "ContactTitle": "Owner",
+            "Address":
+            {
+                "StreetAddress": "Mataderos  2312",
+                "City": "México D.F.",
+                "Country": "Mexico"
+            },
+            "Products": [
+                {
+                    "ProductID": "A7",
+                    "ProductName": "Product 7",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A8",
+                    "ProductName": "Product 8",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A9",
+                    "ProductName": "Product 9",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                }
+            ]
+        },
+        {
+            "SupplierID": "AROUT",
+            "CompanyName": "Around the Horn",
+            "ContactName": "Thomas Hardy",
+            "ContactTitle": "Sales Representative",
+            "Address":
+            {
+                "StreetAddress": "120 Hanover Sq.",
+                "City": "London",
+                "Country": "UK"
+            },
+            "Products": [
+                {
+                    "ProductID": "A10",
+                    "ProductName": "Product 10",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A11",
+                    "ProductName": "Product 11",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A12",
+                    "ProductName": "Product 12",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                }
+            ]
+        },
+        {
+            "SupplierID": "BERGS",
+            "CompanyName": "Berglunds snabbköp",
+            "ContactName": "Christina Berglund",
+            "ContactTitle": "Order Administrator",
+            "Address":
+            {
+                "StreetAddress": "Berguvsvägen  8",
+                "City": "Luleå",
+                "Country": "Sweden"
+            },
+            "Products": [
+                {
+                    "ProductID": "A13",
+                    "ProductName": "Product 13",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A14",
+                    "ProductName": "Product 14",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A15",
+                    "ProductName": "Product 15",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                }
+            ]
+        },
+        {
+            "SupplierID": "BLAUS",
+            "CompanyName": "Blauer See Delikatessen",
+            "ContactName": "Hanna Moos",
+            "ContactTitle": "Sales Representative",
+            "Address":
+            {
+                "StreetAddress": "Forsterstr. 57",
+                "City": "Mannheim",
+                "Country": "Germany"
+            },
+            "Products": [
+                {
+                    "ProductID": "A16",
+                    "ProductName": "Product 16",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A17",
+                    "ProductName": "Product 17",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A18",
+                    "ProductName": "Product 18",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                }
+            ]
+        },
+        {
+            "SupplierID": "BOLID",
+            "CompanyName": "Bólido Comidas preparadas",
+            "ContactName": "Martín Sommer",
+            "ContactTitle": "Owner",
+            "Address":
+            {
+                "StreetAddress": "C/ Araquil, 67",
+                "City": "Madrid",
+                "Country": "Spain"
+            },
+            "Products": [
+                {
+                    "ProductID": "A19",
+                    "ProductName": "Product 19",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A20",
+                    "ProductName": "Product 20",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A21",
+                    "ProductName": "Product 21",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                }
+            ]
+        },
+        {
+            "SupplierID": "BSBEV_UK",
+            "CompanyName": "B's Beverages",
+            "ContactName": "Victoria Ashworth",
+            "ContactTitle": "Sales Representative",
+            "Address":
+            {
+                "StreetAddress": "Fauntleroy Circus",
+                "City": "London",
+                "Country": "UK"
+            },
+            "Products": [
+                {
+                    "ProductID": "A22",
+                    "ProductName": "Product 22",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                }
+            ]
+        },
+        {
+            "SupplierID": "BSBEV_FR",
+            "CompanyName": "B's Beverages",
+            "ContactName": "Victoria Ashworth",
+            "ContactTitle": "Sales Representative",
+            "Address":
+            {
+                "StreetAddress": "Fauntleroy Circus",
+                "City": "London",
+                "Country": "UK"
+            },
+            "Products": [
+                {
+                    "ProductID": "A23",
+                    "ProductName": "Product 23",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A24",
+                    "ProductName": "Product 24",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A25",
+                    "ProductName": "Product 25",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                }
+            ]
+        },
+        {
+            "SupplierID": "BSBEV_IND",
+            "CompanyName": "B's Beverages",
+            "ContactName": "Victoria Ashworth",
+            "ContactTitle": "Sales Representative",
+            "Address":
+            {
+                "StreetAddress": "Fauntleroy Circus",
+                "City": "London",
+                "Country": "UK"
+            },
+            "Products": [
+                {
+                    "ProductID": "A26",
+                    "ProductName": "Product 26",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                },
+                {
+                    "ProductID": "A27",
+                    "ProductName": "Product 27"
+                },
+                {
+                    "ProductID": "A28",
+                    "ProductName": "Product 28",
+                    "QuantityPerUnit": "10",
+                    "UnitPrice": "100",
+                    "UnitsInStock": "100",
+                    "Alergens": "Milk, Soya"
+                }
+            ]
+        },
+        {
+            "SupplierID": "BSBEV_CH",
+            "CompanyName": "B's Beverages",
+            "ContactName": "Victoria Ashworth",
+            "ContactTitle": "Sales Representative",
+            "Address":
+            {
+                "StreetAddress": "Fauntleroy Circus",
+                "City": "London",
+                "Country": "UK"
+            }
+        },
+        {
+            "SupplierID": "BSBEV_US",
+            "CompanyName": "B's Beverages",
+            "ContactName": "Victoria Ashworth",
+            "ContactTitle": "Sales Representative",
+            "Address":
+            {
+                "StreetAddress": "Fauntleroy Circus",
+                "City": "London",
+                "Country": "UK"
+            }
+           
         }
     ]
 }
