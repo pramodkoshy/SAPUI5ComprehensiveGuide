@@ -4,15 +4,30 @@
 
     <Page title="{{i18n>appTitle}}">
        <content>
-           <Table 
-               class="sapUiResponsiveMargin"
-               width="auto"
-               items="{/}">
+        <Table 
+        id="table"
+        class="sapUiResponsiveMargin"
+        width="auto"
+        items="{
+            path: '/',
+            sorter: {
+                path: 'ID',
+                descending: false
+            }
+         
+         }"
+         growing="true"
+         growingThreshold="5">
              <headerToolbar>
                 <Toolbar>
                   <Title id="title" text="Supplier List"/>  
                   <ToolbarSpacer />
-                    <Button id="addButton" text="Add" press="onAddSupplier" />
+                  <Label id="lbl" text="Search"/> 
+
+                  <SearchField id="searchField" width="auto" search="onFilterSuppliers" />
+                  <ToolbarSpacer />
+                  <Button id="addButton" text="Add" press="onAddSupplier" />
+                  
                 </Toolbar>
              </headerToolbar>
 
