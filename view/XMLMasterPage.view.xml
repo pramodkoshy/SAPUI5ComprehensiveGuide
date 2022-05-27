@@ -2,7 +2,7 @@
            xmlns:mvc="sap.ui.core.mvc"
            xmlns="sap.m">
 
-    <Page title="{{i18n>appTitle}}">
+    <Page title="Suppliers">
        <content>
         <Table 
         id="table"
@@ -20,8 +20,8 @@
          growingThreshold="5">
              <headerToolbar>
                 <Toolbar>
-                  <Title id="title" text="Supplier List"/>  
-                  <ToolbarSpacer />
+                  
+                  
                   <Label id="lbl" text="Search"/> 
 
                   <SearchField id="searchField" width="auto" search="onFilterSuppliers" />
